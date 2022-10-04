@@ -1,12 +1,12 @@
 function sumZero(arr) {
-  for (let i = 0, j = arr.length - 1; i < j;) {
-    const sum = arr[i] + arr[j];
+  for (let left = 0, right = arr.length - 1; left < right;) {
+    const sum = arr[left] + arr[right];
     if (sum == 0)
-      return [arr[i], arr[j]]
+      return [arr[left], arr[right]]
     else if (sum > 0)
-      j--;
+      right--;
     else
-      i++;
+      left++;
   }
 }
 
