@@ -3,11 +3,11 @@
 // factorial(4) // 24
 // factorial(7) // 5040
 
-function factorial(num){
-   if (num==1) return 1;
-   return num * factorial(num-1)
+function factorial(num) {
+  if (num == 1 || num == 0) return 1;
+  return num * factorial(num - 1)
 }
 
-(function main(){
-  console.log( factorial(5));
+(function main() {
+  console.log(factorial(5));
 })()
